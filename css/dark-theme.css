@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  background-color: #34547A;
 }
 a:hover{ 
 	transition: all 0.5s;
@@ -30,7 +31,7 @@ body{
 /*HEADER*/
 header{
 	height: 100%;	
-	background-color: #EEEFF1;
+	background-color: #1b3b7d;
 	padding-top: 57px;
 	padding-bottom: 145px;
 }
@@ -42,7 +43,7 @@ header{
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: #CDCDCD;
+	background-color: #a9c8ff;
 	z-index: 10;
 }
 .header + .parag{
@@ -99,7 +100,7 @@ header{
 	margin-bottom: 60px;
 	font-weight: 400;
 	font-size: 1em;
-	color: #727272;
+	color: #ebebeb;
 	width: 60%;
 	min-width: 170px;
 	line-height: 140%;
@@ -143,14 +144,14 @@ main{
 	text-align: center;
 	font-weight: 400;
 	font-size: 1em;
-	color: #727272;
+	color: #ebebeb;
 	line-height: 26.25px;
 	white-space: wrap;
 }
 
 .vwrap{
 	width: 100%;
-	background-color: #34547A;
+	background-color: #1b3b7d;
 }
 .val{
 	display: flex;
@@ -171,11 +172,16 @@ main{
 .values{
 	display: flex;
 	margin-right: 50px;
+	transition: all 0.4s;
+
 }
 .values div{
 	margin-left: 20px;
 }
-
+.values:hover{
+	font-size: 1.08em;
+	cursor: pointer;
+}
 .mskill{
 	display: flex;
 	flex-direction: row;
@@ -199,10 +205,10 @@ main{
 .sinfo{
 	font-weight: 400;
 	font-size: 1em;
-	color: #727272;
+	color: #ebebeb;
 	padding-top: 29px;
 	padding-bottom: 20px;
-	border-bottom: 4px solid #34547A;
+	border-bottom: 4px solid #a9c8ff;
 	width: 350px;
 }
 .bord{
@@ -221,7 +227,7 @@ main{
 	align-items: center;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	background-color: #EEEFF1;
+	background-color: #1b3b7d;
 }
 .mwork h3{
 	font-weight: 500;
@@ -234,7 +240,7 @@ main{
 	line-height: 26.25px;
 	max-width: 540px;
 	white-space: wrap;
-	color: #727272;
+	color: #ebebeb;
 	margin-bottom: 57px;
 }
 iframe{
@@ -274,11 +280,18 @@ iframe{
 	flex-wrap: wrap;
 	padding-top: 72px;
 	padding-bottom: 100px;
+	transition: all 0.3s;
+	text-align: center;
 }
 .comp a{
 	margin-left: 30px;
 	width: 255px;
 	height: 120px;
+	transition: all 0.5s;
+}
+.comp a:hover{
+	width: 20%;
+	height: 20%;
 }
 
 
@@ -288,24 +301,26 @@ form{
 	align-items: center;
 }
 .contact{
-	background-color: #EEEFF1;
+	background-color: #a9c8ff;
 	padding-top: 100px;
 	padding-bottom: 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+
 }
 
 .contactinform h3{
 	font-weight: 500;
 	font-size: 2em;
 	margin-bottom: 50px;
+
 }
 .contactinform p{
 	font-weight: 400;
 	font-size: 1em;
-	color: #727272;
+	color: #000;
 	line-height: 26.25px;
 	margin-bottom: 65px;
 }
@@ -348,9 +363,12 @@ form{
 	font-size: 14px;
 	color: #FFFFFF;
 	text-transform: uppercase;
+	transition: all 0.5s;
 }
 .contact .btn:hover{
 	cursor: pointer;
+	background-color: #4772A6;
+
 }
 .contact .first{ 
 	margin-right: 30px;
@@ -434,9 +452,6 @@ footer li:last-child{
 	.parag{
 		margin-left: 20%;
 	}
-	.header{
-		margin-left: 20%;
-	}
 	.logotip{
 		margin-right: 39.5%;
 	}
@@ -453,6 +468,9 @@ footer li:last-child{
 	}
 	.skillinfo{
 		margin-right: 4%;
+	}
+	.header{
+		padding-left: 10%;
 	}
 }
 @media (max-width: 1025px){
@@ -484,7 +502,7 @@ footer li:last-child{
 		margin-left: 7%;
 	}
 	.header{
-		margin-left: 7%;
+		padding-left: 3%;
 	}
 }
 @media (max-width: 700px){

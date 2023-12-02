@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>WD</title>
 	<link rel="stylesheet" href="css/index.css" id="theme-link">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link defer  rel="preconnect" href="https://fonts.googleapis.com">
 	<link defer  rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link defer  href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@300&family=Revalia&display=swap" rel="stylesheet">
@@ -51,23 +52,23 @@
 			</ul>
 		</div>
 		<div class="parag"  id="main">
-			<picture>
+			<picture class="animate__animated animate__backInLeft">
 				<img src="images/frame.png" alt="PC" title="PC">
 			</picture>
 			<div class="headerparag">
-				<h2>
+				<h2 class="animate__animated animate__backInRight">
 				Дизайн и верстка
 				</h2>
-				<p>
+				<p class="animate__animated animate__backInRight">
 				Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
 				</p>
-				<a href="#contacts">
+				<a href="#contacts" class="animate__animated animate__backInRight">
 				НАПИСАТЬ МНЕ
 				</a>
 			</div>
 		</div>
 	</header>
-	<main>
+	<main class="animate__animated animate__backInDown">
 		<div class="ab" id="about">
 			<h3>
 			Обо мне
@@ -273,14 +274,14 @@
 					<br>на латинице с начала XVI века.
 				</p>
 			</div>
-			<form>
+			<form id="contactForm">
 				<div class="fheader">
-				<input type="text" name="name" placeholder="Ваше имя" class="first" required>
-				<input type="email" name="email" placeholder="Ваш e-mail"required>					
+				<input type="text" id="name" name="name" placeholder="Ваше имя" class="first" required>
+				<input type="email" id="email" name="email" placeholder="Ваш e-mail" required>					
 				</div>
 				<div class="forma">
 				<p>
-				<textarea placeholder="Cообщение" required></textarea>
+				<textarea id="message" name="message" placeholder="Cообщение" required></textarea>
 				</p>
 				</div>
 
@@ -292,10 +293,10 @@
 	<footer>
 		<div class="fn">
 			<h3>
-			Иванов Иван
+			Джумагалиев Самат
 			</h3>
 			<p>
-			(с) 2018. Все права защищены.
+			(с) 2023. Все права защищены.
 			</p>
 		</div>
 		<ol class="fl">

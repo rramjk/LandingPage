@@ -171,11 +171,16 @@ main{
 .values{
 	display: flex;
 	margin-right: 50px;
+	transition: all 0.4s;
+
 }
 .values div{
 	margin-left: 20px;
 }
-
+.values:hover{
+	font-size: 1.08em;
+	cursor: pointer;
+}
 .mskill{
 	display: flex;
 	flex-direction: row;
@@ -274,11 +279,18 @@ iframe{
 	flex-wrap: wrap;
 	padding-top: 72px;
 	padding-bottom: 100px;
+	transition: all 0.3s;
+	text-align: center;
 }
 .comp a{
 	margin-left: 30px;
 	width: 255px;
 	height: 120px;
+	transition: all 0.5s;
+}
+.comp a:hover{
+	width: 20%;
+	height: 20%;
 }
 
 
@@ -437,9 +449,6 @@ footer li:last-child{
 	.parag{
 		margin-left: 20%;
 	}
-	.header{
-		margin-left: 20%;
-	}
 	.logotip{
 		margin-right: 39.5%;
 	}
@@ -456,6 +465,9 @@ footer li:last-child{
 	}
 	.skillinfo{
 		margin-right: 4%;
+	}
+	.header{
+		padding-left: 10%;
 	}
 }
 @media (max-width: 1025px){
@@ -487,7 +499,7 @@ footer li:last-child{
 		margin-left: 7%;
 	}
 	.header{
-		margin-left: 7%;
+		padding-left: 3%;
 	}
 }
 @media (max-width: 700px){
